@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Workout Tracker</title>
+  <link href = "html.css" rel = "stylesheet">
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -17,31 +18,30 @@
 
 <body>
 
-    <div id = "wrapper">
-    <header><center>Workout Tracker</center></header>
+        <br><br><br>
+        <h1>Workout Tracker</h1>
+        <center><img id="logo" src="logo.png" alt="logo" width="600" height="600"></center> 
+    &nbsp&nbsp
+
+    <div id = "table"><center><table style="width:100%">
+      <tr>
+        <td class = "login"><a href = "signin.html"//><img src="login.png" alt="logo" id = "loginid" ></td>
+        <td><a href = "signup.html"//><img src="register.png" alt="logo" id = "registerid" ></td>
+      </tr>
+      <tr class = "text">
+        <td id = "text">Login</td>
+        <td id = "text">Register</td>
+      </tr>
+        </table></center> </div>
     
-    <nav><b><center> 
-        <a href = "homepage.html">Home</a></center></b></nav>
-    </div>
+    
+  
+        
+    <!--<a href = "https://www.google.com"//><img src="google.png" alt="logo" width="200" height="200" >
+    &nbsp
+    <a href = "https://www.facebook.com"//><img src="facebook.png" alt="logo" width="200" height="200" >
+    </center>-->    
 
     
-  <script src="js/scripts.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-  
-  <form>
-	<input type="text" >
-  </form>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCyeQYkpxMjwTT6dXgk621h-boxGKrUByQ",
-    authDomain: "trialdemo-18184.firebaseapp.com",
-    databaseURL: "https://trialdemo-18184.firebaseio.com",
-    projectId: "trialdemo-18184",
-    storageBucket: "",
-    messagingSenderId: "573332345066"
-  };
-  firebase.initializeApp(config);
-</script>
 </body>
 </html>
