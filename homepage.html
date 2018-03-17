@@ -1,22 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+  <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+	<title>Home Page</title>
   </head>
+  
   <body>
-    <h1>Hello, world!</h1>
+	<h1 class="topname">Home</h1>
+	<h3 class="headerofpage">My Workouts</h3>
+	<table class="workoutstable">
+		<tr>
+			<td>Workout 1</td>
+		</tr>
+		<tr>
+			<td>Workout 2</td>
+		</tr>
+	</table>
+	<button class="big-button" href="workout.html">Create Workout</button>
+	<nav class="navbar bottom-nav">
+			<table class="bottom-nav">
+				<tr>
+				<td onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.png"></td>
+				<td onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.png"></td>
+				<td onClick="document.location.href='index.html';"><img class="icons" src="images/home_icon.png"></td>
+				<td onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.png"></td>
+				<td onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.png"></td>
+				</tr>
+			</table>
+	</nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
