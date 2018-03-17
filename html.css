@@ -1,1 +1,104 @@
-this is for the css 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}  
+
+/* The code below is for navigation functionality. */ 
+body {
+    background-color: white; color: #000000;
+    font-family: Arial, Verdana, sans-serif;
+    background: url(background.jpg);
+}
+    
+h1 {
+        font-family: Impact, verdana, monospace;
+        color: #121416;
+        font-size: 120px;
+        text-align: center;
+        line-height: 200%;
+        border-width: 3px;
+        border-color: #cccccc;
+        margin-top: 0px;
+        margin-bottom: 0px;
+          }          
+
+
+#logo {
+    padding-bottom: 20%;
+}
+
+#loginid{
+    zoom: 150%;
+    padding-top: 5%;
+    text-align: center;
+        
+}
+
+#registerid{
+    zoom: 200%;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.login{
+    text-align: center;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+
+.text{
+    font-size: 80px;
+    
+}
+
+#text{
+    text-align: center;
+    
+    
+}
+
+table{ 
+position:fixed;
+bottom: 0;
+}
+
+
+
+.buttonNav{
+          float: center;
+          padding: 1em;
+          color: #ffffff;
+          background-color: #e8eae8;
+          font-weight: bold;
+          text-align: center;
+          margin-left: -25px;
+          margin: 4px;
+          text-decoration: none;
+          box-shadow: 3px 3px 3px #1f1f1f;
+          }
+
+  .buttonNav:link {color: #2c2f33;}
+  .buttonNav:visited {color: #ffffff}
+  .buttonNav:hover {
+                color: white;
+                background-color: #545954;
+                }
+
+
