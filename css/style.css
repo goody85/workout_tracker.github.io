@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #c1bdba;
+  background: #ef910e;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -115,7 +115,7 @@ input, textarea {
   padding: 5px 10px;
   background: none;
   background-image: none;
-  border: 1px solid #a0b3b0;
+  border: 2px solid #00a4db;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
