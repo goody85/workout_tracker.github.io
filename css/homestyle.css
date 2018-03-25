@@ -20,12 +20,17 @@ time, mark, audio, video {
 }
 
 body{
-	background-color:#535456;
+	background:linear-gradient(to right, #36d1dc , #5b86e5);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height:100%;
 	color:#adaeb2;
+	font-family: Eras Bold ITC;
 }
 
 .topname{
 	position: fixed;
+	color: black;
 	top: 0;
 	width: 100%;
 	font-size: 36px;
@@ -44,11 +49,7 @@ body{
 }
 
 .bottom-nav td{
-	background-color: white;
-	border: solid;
-	border-color:black;
-	border-width:.20em;
-	text-align:center;
+	
 }
 
 .headerofpage{
@@ -59,7 +60,7 @@ body{
 }
 
 .icons{
-	zoom: 75%;
+	zoom: 25%;
 }
 
 .workoutstable{
@@ -72,7 +73,15 @@ body{
 	border:solid;
 }
 
-.big-button{
-	position: fixed;
-	bottom: 100;
+#bottom-menu{
+	background-color: white;
+	border: solid;
+	border-color:black;
+	border-width:.20em;
+	text-align:center;
 }
+
+.create-button{
+	text-align:center;
+}
+
