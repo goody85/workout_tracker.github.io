@@ -1,33 +1,36 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <link rel="stylesheet" type="text/css" href="css/homestyle.css">
 	<title>Home Page</title>
   </head>
   
   <body>
-	<h1 class="topname">Home</h1>
-	<h3 class="headerofpage">My Workouts</h3>
+	<h1 class="topname">The Gym</h1>
 	<table class="workoutstable">
-		<tr>
-			<td>Workout 1</td>
-		</tr>
-		<tr>
-			<td>Workout 2</td>
-		</tr>
+		
 	</table>
-	<button class="big-button" href="workout.html">Create Workout</button>
+	<div>
 	<nav class="navbar bottom-nav">
 			<table class="bottom-nav">
 				<tr>
-				<td onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
-				<td onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
-				<td onClick="document.location.href='index.html';"><img class="icons" src="images/home_icon.PNG"></td>
-				<td onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
-				<td onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
+					<td colspan="5" class="create-button">
+						<input type="image" src="images/create_workout_btn.PNG" onClick="document.location.href='workout.html';" />
+					</td>
+				</tr>
+				<tr>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='homemenu.html';"><img class="icons" src="images/home_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
 				</tr>
 			</table>
 	</nav>
+	</div>
+	<script>
 
+</script>
   </body>
 </html>
