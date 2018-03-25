@@ -29,8 +29,9 @@ body{
 }
 
 .topname{
+	background-color:black;
 	position: fixed;
-	color: black;
+	color: white;
 	top: 0;
 	width: 100%;
 	font-size: 36px;
@@ -46,10 +47,6 @@ body{
 	bottom: 0;
 	width: 100%;
 	border-collapse:collapse;
-}
-
-.bottom-nav td{
-	
 }
 
 .headerofpage{
@@ -74,14 +71,25 @@ body{
 }
 
 #bottom-menu{
-	background-color: white;
-	border: solid;
-	border-color:black;
+
 	border-width:.20em;
 	text-align:center;
 }
 
 .create-button{
 	text-align:center;
+}
+
+.mainmenu{
+	align:center;
+	margin-left:5%;
+	margin-right:15%;
+	margin-top:30%;
+	margin-bottom:30%;
+}
+
+#mainicons{
+	zoom:125%;
+	padding:15px;
 }
 
