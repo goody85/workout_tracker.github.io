@@ -1,62 +1,81 @@
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Workout Tracker</title>
-  <link href = "newexercise.html" rel = "stylesheet">
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>Workout Tracker</title>
+    <link href="newexercise.html" rel="stylesheet">
+    <meta name="description" content="Workout Tracker - New Exercise, user-scalable=0" >
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/newexercise.css">
+    <link rel="stylesheet" href="css/newexercise.css">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
-    
+
 <body>
-    
+
     <h3>New Exercise</h3>
-     <p></p> 
-    
-        <form id = "exerciseform">
+    <p></p>
+
+    <form id="exerciseform">
         <h5>Name</h5>
-        <input id = "exercisetxt"type="text" name="exercisename" value="" placeholder="Exercise name">
-        <h5>Weight</h5>    
-        <input id = "exercisetxt" type="text" name="weight" value="" placeholder="Weight">
-        <h5>Reps</h5>    
-        <input id = "exercisetxt" type="text" name="rep" value="" placeholder="Reps">    
+        <input id="exercisetxt" type="text" name="exercisename" value="" placeholder="Exercise name">
+        <h5>Weight</h5>
+        <input id="exercisetxt" type="text" name="weight" value="" placeholder="Weight">
+        <h5>Reps</h5>
+        <input id="exercisetxt" type="text" name="rep" value="" placeholder="Reps">
         <h5>Sets</h5>
-        <input id = "exercisetxt" type="text" name="set" value="" placeholder="Sets"> 
-        <h5>Time/Set</h5>
-        <input id = "exercisetxt" type="text" name="set" value="" placeholder="Time per Sets">     
-        <h5>Muscle Category</h5>    
-        <input id = "exercisetxt" type="text" name="set" value="" placeholder="Main Muscle Category">     
-        <br>
+        <input id="exercisetxt" type="text" name="set" value="" placeholder="Sets">
+        <h5>Time/Set (mins)</h5>
+        <input id="exercisetxt" type="text" name="set" value="" placeholder="Time per Sets">
+        <h5>Main Muscle Target</h5>
         
-          
+        <select style = "background-color: white;
+                         height: 90px; width: 70%;
+                        margin-left: 15%;
+                        font-style: normal;
+                         font-size: 40px;">
+        <option value="" disabled selected>Select your option</option>
+        <option value="Neck">Neck</option>
+        <option value="Traps">Traps</option>
+        <option value="Shoulders">Shoulders</option>
+        <option value="Chest">Chest</option>
+        <option value="Biceps">Biceps</option>
+        <option value="Forearm">Forearm</option>
+        <option value="Abs">Abs</option>
+        <option value="Quads">Quads</option>
+        <option value="Calves">Calves</option>
+        <option value="Traps">Traps</option>
+        <option value="Triceps">Triceps</option>
+        <option value="Lats">Lats</option>
+        <option value="Middle Back">Middle Back</option>
+        <option value="Lower Back">Lower Back</option>
+        <option value="Glutes">Glutes</option>
+        <option value="Quads">Quads</option>
+        <option value="Hamstrings">Hamstrings</option>
+        <option value="Calves">Calves</option>
+        </select>
         
-            
-        <input id = "buttons" type="image" src = images/cancel_icon.png>
-        <input id = "buttons" type="image" src = images/ok_icon.png>
-            
-            
-        </form> 
-    
+        <h5></h5>
+        <input id="buttons" type="image" src=images/cancel_icon.png>
+        <input id="buttons" type="image" src=images/ok_icon.png>
+    </form>
+
     <div>
-    <nav class="navbar bottom-nav">
-			<table class="bottom-nav">
-			
-				<tr>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='homemenu.html';"><img class="icons" src="images/home_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
-				</tr>
-			</table>
-	</nav>
+        <nav class="navbar bottom-nav">
+            <table class="bottom-nav">
+
+                <tr>
+                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='homemenu.html';"><img class="icons" src="images/home_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
+                </tr>
+            </table>
+        </nav>
     </div>
-    
+
 </body>
+
 </html>
