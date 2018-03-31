@@ -48,8 +48,6 @@ h5 {
     font-family: monospace;
     font-size: 70px;
     margin-left: 2em;
-    
-    
 }
 
 #exercisetxt {
@@ -58,7 +56,10 @@ h5 {
     margin-left: 15%;
     font-style: normal;
     font-size: 40px;
+    background-color: white;
 }
+
+
 
 #buttons {
     padding: 60px;
@@ -83,6 +84,8 @@ h5 {
 	border-collapse:collapse;
     
 }
+
+
 
 
 
