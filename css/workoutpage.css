@@ -22,7 +22,13 @@ time, mark, audio, video {
 body{
 	background-color:#535456;
 	color:#adaeb2;
+   
 }
+
+
+
+
+
 
 .topname{
 	position: fixed;
@@ -76,3 +82,4 @@ body{
 	position: fixed;
 	bottom: 100;
 }
+
