@@ -11,7 +11,7 @@
 		<table class="mainmenu">
 		<tr>
 		<td onClick="document.location.href='index.html';"><img id="mainicons" src="images/home_menu_profile.png"></td>
-		<td onClick="document.location.href='homepage.html';"><img id="mainicons" src="images/home_menu_gym.png"></td>
+		<td onClick="document.location.href='homepage.php';"><img id="mainicons" src="images/home_menu_gym.png"></td>
 		</tr>
 		<tr>
 		<td onClick="document.location.href='index.html';"><img id="mainicons" src="images/home_menu_settings.png"></td>
