@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+	<title>Home Page</title>
+  </head>
+  
+  <body>
+	<h1 class="topname">The Gym</h1>
+	<table class="workoutstable">
+		
+	</table>
+	<div>
+	<nav class="navbar bottom-nav">
+			<table class="bottom-nav">
+				<tr>
+					<td colspan="5" class="create-button">
+						<input type="image" src="images/create_workout_btn.png" onClick="document.location.href='workout.html';" />
+					</td>
+				</tr>
+				<tr>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='homemenu.html';"><img class="icons" src="images/home_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
+				</tr>
+			</table>
+	</nav>
+	</div>
+  </body>
+</html>
