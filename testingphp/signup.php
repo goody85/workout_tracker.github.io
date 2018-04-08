@@ -27,7 +27,7 @@ $height = $_POST['height'];
 $age = $_POST['age'];
 $weight = $_POST['weight'];
 		
-$sql = "INSERT INTO users (fname, lname, email, password, gender, height, age, weight) VALUES ('$fname','$lname', '$email', '$password1', '$gender', '$height', '$age', '$weight')";
+$sql = "INSERT INTO users (first_name, last_name, email, password, gender, height, age, weight) VALUES ('$fname','$lname', '$email', '$password1', '$gender', '$height', '$age', '$weight')";
 		
 if (!mysql_query($sql)){
 	die('Error:' . mysql_error());
