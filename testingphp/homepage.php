@@ -16,15 +16,15 @@
 			<table class="bottom-nav">
 				<tr>
 					<td colspan="5" class="create-button">
-						<input type="image" src="images/create_workout_btn.png" onClick="document.location.href='workout.html';" />
+						<input type="image" src="images/create_workout_btn.png" onClick="document.location.href='workout2.php';" />
 					</td>
 				</tr>
 				<tr>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='homemenu.html';"><img class="icons" src="images/home_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
-					<td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/profile_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/history_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/home_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/data_icon.PNG"></td>
+					<td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/settings_icon.PNG"></td>
 				</tr>
 			</table>
 	</nav>
