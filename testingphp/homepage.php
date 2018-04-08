@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +12,13 @@
   <body>
 	<h1 class="topname">The Gym</h1>
 	<table class="workoutstable">
-		
+		<tr>
+			<th>Workout</th>
+			<th># Of Excercises</th>
+			<th>Edit Button</th>
+			<th>Start Button</th>
+		</tr>
+		<?php echo $_SESSION["workouttable"]; ?>
 	</table>
 	<div>
 	<nav class="navbar bottom-nav">

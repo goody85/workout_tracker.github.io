@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL ^ E_DEPRECATED);
 define('DB_NAME', 'webdev');
 define('DB_USER', 'root');
@@ -28,6 +29,7 @@ if (!$res = mysql_query($sql)){
 $rows = mysql_fetch_assoc($res);
 
 if ($password === $rows[$dbpassword]){
+	$_SESSION["useremail"] = $email;
 	header( 'Location: /webdev/homemenu.php' );
 }else{
 $message = "Wrong Password! Try Again";
