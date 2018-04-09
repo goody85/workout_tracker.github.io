@@ -29,7 +29,7 @@ time, mark, audio, video {
 }
 
 .topname{
-	background-color:#4cf75a;
+	background-color:#444444;
 	/*position: fixed;*/
 	color: white;
 	/*top: 0;*/
@@ -72,19 +72,21 @@ time, mark, audio, video {
 	width: 100%;
 	color:black;
     border-collapse:collapse;
-	vertical-align:center;
+	/*vertical-align:center;*/
 	text-align:center;
 }
+	
 .workoutstable td{
 	font-size: 20px;
 	font-weight: bold;
 	color: black;
+	vertical-align:middle;
 }
 
 .bottom-menu{
 	border-width:.20em;
 	text-align:center;
-	background-color:#4cf75a;
+	background-color:#444444;
 }
 
 .create-button{
@@ -97,7 +99,7 @@ time, mark, audio, video {
 	height:40px;
 	margin-bottom:20px;
 	border-radius:25px;
-	background-color:#4cf75a;
+	background-color:#444444;
 	font-size:30px;
 	color: white;
 }
@@ -109,20 +111,28 @@ time, mark, audio, video {
 	margin-top:20%;
 }
 
-#mainicons{
+.mainicons{
 	zoom:125%;
 	padding:15px;
 }
 
-#editbutton{
+#deletebutton{
 	width:100%;
 	height:100%;
-	background-color:#f97400;
+	background-color:#ba0000;
 }
 
 #startbutton{
 	width:100%;
-	background-color:#00c3f9;
+	background-color:#00ba1f;
+}
+
+#exercisetd{
+	font-size:40px;
+}
+
+#workouttd{
+	font-size:30px;
 }
 
 .exercisetable{
