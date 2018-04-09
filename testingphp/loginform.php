@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<?php
+	session_start();
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="form">
 
         <div id="login">
@@ -34,7 +38,7 @@
                     <input type="password" required autocomplete="off" name="password"/>
                 </div>
 
-                <p class="forgot"><a href="signup.html">Need an Account?</a></p>
+                <p class="forgot"><a href="signupform.php">Need an Account?</a></p>
 
                 <!--button class="button button-block"/>Log In</button-->
                 <!--button class="button button-block" onClick="document.location.href='homepage.html';">Log In</button-->

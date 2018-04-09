@@ -26,9 +26,9 @@
         
         <div id = "new-workout">
 
-        <a href="\index.html"><img id = "xbutton" src = "images/cancel_icon.png" 
+        <a href="homepage.php"><img id = "xbutton" src = "images/cancel_icon.png" 
     alt = "cancelicon"></a>
-        <a href="\newexercise.html"><img id = "okbutton" src = "images/ok_icon.png" 
+        <a href="newexercise.php"><img id = "okbutton" src = "images/ok_icon.png" 
     alt = "cancelicon"></a>
             
         </div>
@@ -40,11 +40,11 @@
             <table class="bottom-nav">
 
                 <tr>
-                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/profile_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/history_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='homemenu.html';"><img class="icons" src="images/home_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/data_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='index.html';"><img class="icons" src="images/settings_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/profile_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/history_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/home_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/data_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/settings_icon.PNG"></td>
                 </tr>
             </table>
         </nav>

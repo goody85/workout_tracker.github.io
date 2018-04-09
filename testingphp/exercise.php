@@ -17,17 +17,15 @@ if (!$db_selected){
 	die('Can\'t use ' . DB_NAME . ': ' . mysql_error());
 }
 		
-$fname = $_POST['firstname'];
-$lname = $_POST['lastname'];
-$email = $_POST['emailaddress'];
-$password1 = $_POST['password1'];
-$password2 = $_POST['password2'];
-$gender = $_POST['gender'];
-$height = $_POST['height'];
-$age = $_POST['age'];
+$exercise = $_POST['exercisename'];
 $weight = $_POST['weight'];
+$sets = $_POST['sets'];
+$reps = $_POST['reps'];
+$time = $_POST['time'];
+$muscle = $_POST['muscle'];
+
 		
-$sql = "INSERT INTO users (first_name, last_name, email, password, gender, height, age, weight) VALUES ('$fname','$lname', '$email', '$password1', '$gender', '$height', '$age', '$weight')";
+$sql = "INSERT INTO exercises (exercise_name, weight, sets, reps, time, muscle) VALUES ('$exercise','$weight', '$sets', '$reps', '$time', '$muscle')";
 		
 if (!mysql_query($sql)){
 	die('Error:' . mysql_error());
