@@ -22,20 +22,20 @@
         <input id="exercisetxt" type="text" name="exercisename" value="" placeholder="Exercise name">
         <h5>Weight</h5>
         <input id="exercisetxt" type="number" name="weight" value="" placeholder="Weight">
-        <h5>Reps</h5>
-        <input id="exercisetxt" type="number" name="rep" value="" placeholder="Reps">
         <h5>Sets</h5>
-        <input id="exercisetxt" type="number" name="set" value="" placeholder="Sets">
+        <input id="exercisetxt" type="number" name="sets" value="" placeholder="Sets">
+        <h5>Reps</h5>
+        <input id="exercisetxt" type="number" name="reps" value="" placeholder="Reps">
         <h5>Time/Set (mins)</h5>
-        <input id="exercisetxt" type="number" name="set" value="" placeholder="Time per Sets">
+        <input id="exercisetxt" type="number" name="time" value="" placeholder="Time per Sets">
         <h5>Main Muscle Target</h5>
         
-        <select style = "background-color: white;
+        <select name="muscle" style = "background-color: white;
                          height: 90px; width: 70%;
                         margin-left: 15%;
                         font-style: normal;
                          font-size: 40px;">
-        <option value="" disabled selected>Select your option</option>
+        <option value="" disabled selected>Select your muscle</option>
         <option value="Neck">Neck</option>
         <option value="Traps">Traps</option>
         <option value="Shoulders">Shoulders</option>
