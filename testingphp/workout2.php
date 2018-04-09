@@ -26,7 +26,7 @@
         
         <div id = "new-workout">
 
-        <a href="\index.php"><img id = "xbutton" src = "images/cancel_icon.png" 
+        <a href="homepage.php"><img id = "xbutton" src = "images/cancel_icon.png" 
     alt = "cancelicon"></a>
         <a href="newexercise.php"><img id = "okbutton" src = "images/ok_icon.png" 
     alt = "cancelicon"></a>

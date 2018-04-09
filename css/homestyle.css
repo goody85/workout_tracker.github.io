@@ -19,31 +19,28 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body{
-	background:linear-gradient(to right, #36d1dc , #5b86e5);
+ body{
+	background-color:whit;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height:100%;
 	color:#adaeb2;
-	font-family: Eras Bold ITC;
+	font-family: Calibri;
 }
 
 .topname{
-	background-color:black;
-	position: fixed;
+	background-color:#4cf75a;
+	/*position: fixed;*/
 	color: white;
-	top: 0;
+	/*top: 0;*/
 	width: 100%;
 	font-size: 36px;
 	font-weight:bold;
 	text-align: center;
-	border-bottom: solid;
-	border-width: .20em;
-	border-color: black;
 }
 
 .bottom-nav{
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 	border-collapse:collapse;
@@ -60,23 +57,49 @@ body{
 	zoom: 25%;
 }
 
+#innertable{
+	height:100%;
+	position:relate;
+}
+.workoutstable th{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	border-bottom:solid;
+	border-width:5px;
+}
 .workoutstable{
-	padding:5%;
 	width: 100%;
+	color:black;
+    border-collapse:collapse;
+	vertical-align:center;
+	text-align:center;
 }
 .workoutstable td{
 	font-size: 20px;
 	font-weight: bold;
-	border:solid;
+	color: black;
 }
 
-#bottom-menu{
+.bottom-menu{
 	border-width:.20em;
 	text-align:center;
+	background-color:#4cf75a;
 }
 
 .create-button{
 	text-align:center;
+	
+}
+
+#createbutton{
+	width:80%;
+	height:40px;
+	margin-bottom:20px;
+	border-radius:25px;
+	background-color:#4cf75a;
+	font-size:30px;
+	color: white;
 }
 
 .mainmenu{
@@ -89,5 +112,16 @@ body{
 #mainicons{
 	zoom:125%;
 	padding:15px;
+}
+
+#editbutton{
+	width:100%;
+	height:100%;
+	background-color:#f97400;
+}
+
+#startbutton{
+	width:100%;
+	background-color:#00c3f9;
 }
 

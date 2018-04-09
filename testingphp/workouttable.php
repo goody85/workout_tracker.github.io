@@ -19,7 +19,7 @@ if (!$db_selected){
 }
 		
 $email = $_SESSION["useremail"];
-$sql = "select workouts.`workout_name`, workouts.`number_of_excercises`
+$sql = "select workouts.`workout_name`, workouts.`number_of_exercises`
 from workouts
 inner join `user-workouts`
 on workouts.id = `user-workouts`.`workout_id`
@@ -33,9 +33,18 @@ if (!$res = mysql_query($sql)){
 }
 while($rows = mysql_fetch_assoc($res))
 {
-	$wkttable .= "<tr><td>".$rows['workout_name']."</td><td>".$rows['number_of_excercises']."</td></tr>";
+	$wkttable .= "<tr><td>".$rows['workout_name']."</td><td>".
+	$rows['number_of_exercises']."</td>
+	<td><button id='editbutton'><img class='icons' src='images/edit_icon.PNG'></button></td><td><button id='startbutton'><img class='icons' src='images/start_icon.PNG'></button></td></tr>";
 };
 
+$sql = "select id from users where email = '$email'";
+if (!$res = mysql_query($sql)){
+	die('Error:' . mysql_error());
+}
+$rows = mysql_fetch_assoc($res);
+
+$_SESSION["userid"] = $rows['id'];
 $_SESSION["workouttable"] = $wkttable;	
 mysql_close();
 header( 'Location: /webdev/homepage.php' );		
