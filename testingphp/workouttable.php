@@ -33,9 +33,10 @@ if (!$res = mysql_query($sql)){
 }
 while($rows = mysql_fetch_assoc($res))
 {
-	$wkttable .= "<tr><td>".$rows['workout_name']."</td><td>".
+	$wkttable .= "<tr><td id='workouttd'>".$rows['workout_name']."</td><td id='exercisetd'>".
 	$rows['number_of_exercises']."</td>
-	<td><button id='editbutton'><img class='icons' src='images/edit_icon.PNG'></button></td><td><button id='startbutton'><img class='icons' src='images/start_icon.PNG'></button></td></tr>";
+	<td><button id='deletebutton'><img class='icons'src='images/delete_icon.PNG'></button></td> <td><button id='startbutton'><img class='icons'src='images/start_icon.PNG'></button></td>
+	</tr>";
 };
 
 $sql = "select id from users where email = '$email'";

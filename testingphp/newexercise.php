@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <html lang="en">
 
 <head>
@@ -17,7 +20,7 @@
     <h2>New Exercise</h2>
     <p></p>
 
-    <form id="exerciseform">
+    <form id="exerciseform" action="exercise.php" method="post">
         <h5>Name</h5>
         <input id="exercisetxt" type="text" name="exercisename" value="" placeholder="Exercise name">
         <h5>Weight</h5>
@@ -57,8 +60,9 @@
         </select>
         
         <h5></h5>
-        <input id="buttons" type="image" src=images/cancel_icon.png>
-        <input id="buttons" type="image" src=images/ok_icon.png>
+        <input id="buttons" type="image" src="images/cancel_icon.png" onClick="document.location.href='workout2.php';">
+        <input id="buttons" type="image" src="images/ok_icon.png" alt="submit" onClick="document.location.href='exercise.php';">
+		<input type="submit">
     </form>
 
     <div>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL ^ E_DEPRECATED);
 define('DB_NAME', 'webdev');
 define('DB_USER', 'root');
