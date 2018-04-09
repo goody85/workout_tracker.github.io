@@ -20,10 +20,12 @@ time, mark, audio, video {
 }  
 
 /* The code below is for navigation functionality. */ 
-body {
-    background-color: white; color: #000000;
-    font-family: Arial, Verdana, sans-serif;
-    background: url(background.jpg);
+body{
+	background:linear-gradient(to right, #36d1dc , #5b86e5);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height:100%;
+	font-family: Eras Bold ITC;
 }
     
 h1 {
@@ -77,6 +79,9 @@ h1 {
 table{ 
 position:fixed;
 bottom: 0;
+font-family: monospace;
+font-size: 70px;
+ 
 }
 
 

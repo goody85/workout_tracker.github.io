@@ -1,29 +1,39 @@
-<!doctype html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/newexercise.css">
-    <title>Workout</title>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Workout Tracker</title>
+    <link href="workout.html" rel="stylesheet">
+    <meta name="description" content="Workout Tracker - Workout, user-scalable=0">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/newexercise.css">
+
 </head>
 
 <body>
-    <h1 class="topname">Workout</h1>
-    
-    <form>
 
-        <h5>Name of Workout</h5>
-        <input id="workouttxt" type="text" name="workout" value="" placeholder="Name of Workout">
-        <h5>Number of Exercises</h5>
-        <input id="workouttxt" type="number" name="weight" value="" placeholder="Number of Exercises">
-        
-        
-          <a href = "\index.html"><img src = "images/cancel_icon.png" 
-    alt = "cancelicon"></a>
-        <a href = "\newexercise.html"><img src = "images/ok_icon.png" 
-    alt = "cancelicon"></a>
-        
-        
+    <h2>New Workout</h2>
+    <p></p>
 
-    </form>    
+    <form id="workoutform">
+        <h5>Name</h5>
+        <input id="exercisetxt" type="text" name="exercisename" value="" placeholder="Exercise name"> <br>
+        <h5>Number of Exercise</h5> 
+        <input id="exercisetxt" type="number" name="howmanyexercises" value="" placeholder="Number of exercises">
+
+        
+        <div id = "new-workout">
+
+        <a href="\index.html"><img id = "xbutton" src = "images/cancel_icon.png" 
+    alt = "cancelicon"></a>
+        <a href="newexercise.html"><img id = "okbutton" src = "images/ok_icon.png" 
+    alt = "cancelicon"></a>
+            
+        </div>
+        
+    </form>
 
     <div>
         <nav class="navbar bottom-nav">
@@ -41,4 +51,5 @@
     </div>
 
 </body>
+
 </html>

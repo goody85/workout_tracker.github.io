@@ -25,8 +25,8 @@
 
     <div id = "table"><center><table style="width:100%">
       <tr>
-        <td class = "login"><a href = "login.html"//><img src="images/login_icon.png" alt="logo" id = "loginid" ></td>
-        <td><a href = "signup.html"//><img src="images/register_icon.png" alt="logo" id = "registerid" ></td>
+        <td class = "login"><a href = "loginform.php"//><img src="images/login_icon.png" alt="logo" id = "loginid" ></td>
+        <td><a href = "signupform.php"//><img src="images/register_icon.png" alt="logo" id = "registerid" ></td>
       </tr>
       <tr class = "text">
         <td id = "text">Login</td>
