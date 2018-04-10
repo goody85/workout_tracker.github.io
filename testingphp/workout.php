@@ -1,53 +1,44 @@
-<?php
-session_start();
-error_reporting(E_ALL ^ E_DEPRECATED);
-define('DB_NAME', 'webdev');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', 'localhost');
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/newexercise.css">
+    <title>Workout</title>
+</head>
 
-$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+<body>
+    <h1 class="topname">Workout</h1>
+    
+    <form>
 
-if(!$link){
-	die('Could not connect: ' . mysql_error());
-}
-	
-$db_selected = mysql_select_db(DB_NAME, $link);
-	
-if (!$db_selected){
-	die('Can\'t use ' . DB_NAME . ': ' . mysql_error());
-}
-if (isset($_POST['workoutname'])) {
-    $wname = $_POST['workoutname'];
-}
+        <h5>Name of Workout</h5>
+        <input id="workouttxt" type="text" name="workout" value="" placeholder="Name of Workout">
+        <h5>Number of Exercises</h5>
+        <input id="workouttxt" type="number" name="weight" value="" placeholder="Number of Exercises">
+        
+        
+          <a href = "\index.php"><img src = "images/cancel_icon.png" 
+    alt = "cancelicon"></a>
+        <a href = "\newexercise.php"><img src = "images/ok_icon.png" 
+    alt = "cancelicon"></a>
+        
+        
 
-if (isset($_POST['num_of_exercises'])) {
-    $noe = $_POST['num_of_exercises'];
-}
+    </form>    
 
-$sql = "INSERT INTO workouts (workout_name, number_of_exercises) VALUES ('$wname', '$noe')";
-		
-if (!mysql_query($sql)){
-	die('Error:' . mysql_error());
-}
+    <div>
+        <nav class="navbar bottom-nav">
+            <table class="bottom-nav">
 
-$sql = "SELECT max(id) from workouts";
-		
-if (!$res = mysql_query($sql)){
-	die('Error:' . mysql_error());
-}
-$rows = mysql_fetch_assoc($res);
+                <tr>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/profile_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/history_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/home_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/data_icon.PNG"></td>
+                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/settings_icon.PNG"></td>
+                </tr>
+            </table>
+        </nav>
+    </div>
 
-$_SESSION["lastrow"] = $rows['max(id)'];
-$userid = $_SESSION["userid"];
-$lastrow = $_SESSION["lastrow"];
-$sql = "INSERT INTO `user-workouts` (user_id, workout_id) VALUES ('$userid', '$lastrow')";
-
-if (!mysql_query($sql)){
-	die('Error:' . mysql_error());
-}
-
-mysql_close();
-header( 'Location: /webdev/workouttable.php' );
-		
-?>
+</body>
+</html>

@@ -1,6 +1,3 @@
-<?php
-	session_start();
-?>
 <html lang="en">
 
 <head>
@@ -17,21 +14,39 @@
 
 <body>
 
-    <h2>New Exercise</h2>
+    <h2 class="topname">New Exercise</h2>
     <p></p>
 
-    <form id="exerciseform" action="exercise.php" method="post">
+    <form id="exerciseform">
+	
+		<br>
+		<br>
         <h5>Name</h5>
         <input id="exercisetxt" type="text" name="exercisename" value="" placeholder="Exercise name">
+	
+		<br>
+		<br>
         <h5>Weight</h5>
         <input id="exercisetxt" type="number" name="weight" value="" placeholder="Weight">
+		
+		<br>
+		<br>
         <h5>Sets</h5>
         <input id="exercisetxt" type="number" name="sets" value="" placeholder="Sets">
+	
+		<br>
+		<br>
         <h5>Reps</h5>
         <input id="exercisetxt" type="number" name="reps" value="" placeholder="Reps">
+		
+		<br>
+		<br>
         <h5>Time/Set (mins)</h5>
         <input id="exercisetxt" type="number" name="time" value="" placeholder="Time per Sets">
-        <h5>Main Muscle Target</h5>
+        
+		<br>
+		<br>
+		<h5>Main Muscle Target</h5>
         
         <select name="muscle" style = "background-color: white;
                          height: 90px; width: 70%;
@@ -60,9 +75,8 @@
         </select>
         
         <h5></h5>
-        <input id="buttons" type="image" src="images/cancel_icon.png" onClick="document.location.href='workout2.php';">
-        <input id="buttons" type="image" src="images/ok_icon.png" alt="submit" onClick="document.location.href='exercise.php';">
-		<input type="submit">
+        <input id="buttons" type="image" src=images/cancel_icon.png>
+        <input id="buttons" type="image" src=images/ok_icon.png>
     </form>
 
     <div>
@@ -70,11 +84,11 @@
             <table class="bottom-nav">
 
                 <tr>
-                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/profile_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/history_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/home_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/data_icon.PNG"></td>
-                    <td id="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/settings_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/profile_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/history_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/home_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/data_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/settings_icon.PNG"></td>
                 </tr>
             </table>
         </nav>
