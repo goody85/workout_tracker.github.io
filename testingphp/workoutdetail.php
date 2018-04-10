@@ -1,9 +1,8 @@
 <?php
-	session_start();
+session_start();
 ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/homestyle.css">
@@ -11,26 +10,18 @@
 </head>
 
 <body>
-    <h1 class="topname">The Gym</h1>
-	<form action="details.php" method="post">
-    <div id="innertable">
-        <table class="workoutstable">
-            <tr>
-                <th>Workout</th>
-                <th># Of Excercises</th>
-                <th></th>
-                <th></th>
-            </tr>
-            <?php echo $_SESSION["workouttable"]; ?>
-        </table>
-    </div>
-	</form>
+    <h1 class="topname">
+	<?php echo $_SESSION["workoutheader"] ?>
+    </h1>
+	<table>
+    <?php echo $_SESSION["details"] ?>
+	</table>
     <div>
         <nav class="navbar bottom-nav">
             <table class="bottom-nav">
                 <tr>
                     <td colspan="5" class="create-button">
-                        <button id="createbutton" onClick="document.location.href='workout2.php';">Create Workout</button>
+                        <button id="createbutton" onClick="document.location.href='workout2.php';">Add Exercise</button>
                         <!--<input type="image" src="images/create_workout_btn.png" onClick="document.location.href='workout2.php';" />-->
                     </td>
                 </tr>
