@@ -12,6 +12,7 @@
 
 <body>
     <h1 class="topname">The Gym</h1>
+	<form action="details.php" method="post">
     <div id="innertable">
         <table class="workoutstable">
             <tr>
@@ -23,6 +24,7 @@
             <?php echo $_SESSION["workouttable"]; ?>
         </table>
     </div>
+	</form>
     <div>
         <nav class="navbar bottom-nav">
             <table class="bottom-nav">
