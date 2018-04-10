@@ -1,5 +1,4 @@
 <?php
-session_start();
 error_reporting(E_ALL ^ E_DEPRECATED);
 define('DB_NAME', 'webdev');
 define('DB_USER', 'root');
@@ -26,30 +25,13 @@ $time = $_POST['time'];
 $muscle = $_POST['muscle'];
 
 		
-$sql = "INSERT INTO exercises (exercise_name, weight, sets, reps, time, muscle) VALUES 
-		('$exercise','$weight', '$sets', '$reps', '$time', '$muscle')";
+$sql = "INSERT INTO exercises (exercise_name, weight, sets, reps, time, muscle) VALUES ('$exercise','$weight', '$sets', '$reps', '$time', '$muscle')";
 		
 if (!mysql_query($sql)){
 	die('Error:' . mysql_error());
 }
-
-$sql = "SELECT max(id) from exercises";
-
-if (!$res = mysql_query($sql)){
-	die('Error:' . mysql_error());
-}
-$rows = mysql_fetch_assoc($res);
-
-$_SESSION["lastexercise"] = $rows['max(id)'];
-$workoutid = $_SESSION["lastrow"];
-$exerciseid = $_SESSION["lastexercise"];
-$sql = "INSERT into `workout-exercise` (workout_id, exercise_id) VALUES ('$workoutid','$exerciseid')";
 		
-if (!mysql_query($sql)){
-	die('Error:' . mysql_error());
-}
-
 mysql_close();
-header( 'Location: /webdev/homepage.php' );
+header( 'Location: /webdev/loginform.php' );
 		
 ?>
