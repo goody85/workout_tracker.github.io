@@ -71,11 +71,13 @@ h5 {
 	zoom: 60%;
 }
 
+/*Replace with new Footer - check bottom of this page
 #bottom-menu{
 bottom:0;
 	border-width:.20em;
 	text-align:center;
 }
+*/
 
 .bottom-nav{
     position:fixed;
@@ -107,9 +109,21 @@ bottom:0;
     padding-top: 15%;
 }
 
+/*New Added Data*/
+.topname{
+	background-color:#000077;
+	/*position: fixed;*/
+	color: white;
+	/*top: 0;*/
+	width: 100%;
+	font-size: 900%;
+	font-weight:bold;
+	text-align: center;
+}
 
-
-
-
-
+.bottom-menu{
+	border-width:.20em;
+	text-align:center;
+	background-color:#000077;
+}
 

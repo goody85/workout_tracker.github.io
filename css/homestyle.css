@@ -20,6 +20,16 @@ time, mark, audio, video {
 }
 
  body{
+    background:linear-gradient(to right, #36d1dc , #5b86e5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	height:100%;
+	color:#adaeb2;
+	font-family: Calibri;
+}
+
+/*Original for Background color
+body{
 	background-color:whit;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -27,9 +37,10 @@ time, mark, audio, video {
 	color:#adaeb2;
 	font-family: Calibri;
 }
+*/
 
 .topname{
-	background-color:#444444;
+	background-color:#000077;
 	/*position: fixed;*/
 	color: white;
 	/*top: 0;*/
@@ -39,6 +50,18 @@ time, mark, audio, video {
 	text-align: center;
 }
 
+/* Original Header Color - Bright Green
+.topname{
+	background-color:#4cf75a;
+	//position: fixed;//
+	color: white;
+	//top: 0;//
+	width: 100%;
+	font-size: 36px;
+	font-weight:bold;
+	text-align: center;
+}
+*/
 .bottom-nav{
 	position: absolute;
 	bottom: 0;
@@ -57,10 +80,27 @@ time, mark, audio, video {
 	zoom: 25%;
 }
 
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300%;
+  font-size: 400%;
+  margin: 0 0 10%;
+}
+
+
 #innertable{
 	height:100%;
 	position:relate;
 }
+
+#tabletitle{
+text-align: center;
+  color: #000000;
+  font-weight: 150%;
+  font-size: 150%;
+}
+
 .workoutstable th{
 	font-size: 20px;
 	font-weight: bold;
@@ -68,30 +108,39 @@ time, mark, audio, video {
 	border-bottom:solid;
 	border-width:5px;
 }
+
 .workoutstable{
 	width: 100%;
 	color:black;
     border-collapse:collapse;
-	/*vertical-align:center;*/
+	vertical-align:center;
 	text-align:center;
 }
-	
+
 .workoutstable td{
 	font-size: 20px;
 	font-weight: bold;
 	color: black;
-	vertical-align:middle;
 }
 
 .bottom-menu{
 	border-width:.20em;
 	text-align:center;
-	background-color:#444444;
+	background-color:#000077;
 }
+
+/*Original Footer Color-Bright Green
+.bottom-menu{
+	border-width:.20em;
+	text-align:center;
+	background-color:#4cf75a;
+}
+*/
 
 .create-button{
 	text-align:center;
 	
+
 }
 
 #createbutton{
@@ -99,10 +148,22 @@ time, mark, audio, video {
 	height:40px;
 	margin-bottom:20px;
 	border-radius:25px;
-	background-color:#444444;
+	background-color:#FC9F1E;
 	font-size:30px;
 	color: white;
 }
+
+/*Original Button Color for Create Workout-Bright Green
+#createbutton{
+	width:80%;
+	height:40px;
+	margin-bottom:20px;
+	border-radius:25px;
+	background-color:#4cf75a;
+	font-size:30px;
+	color: white;
+}
+*/
 
 .mainmenu{
 	align:center;
@@ -111,27 +172,19 @@ time, mark, audio, video {
 	margin-top:20%;
 }
 
-.mainicons{
+#mainicons{
 	zoom:125%;
 	padding:15px;
 }
 
-#deletebutton{
+#editbutton{
 	width:100%;
 	height:100%;
-	background-color:#ba0000;
+	background-color:#f97400;
 }
 
 #startbutton{
 	width:100%;
-	background-color:#00ba1f;
-}
-
-#exercisetd{
-	font-size:40px;
-}
-
-#workouttd{
-	font-size:30px;
+	background-color:#00c3f9;
 }
 
