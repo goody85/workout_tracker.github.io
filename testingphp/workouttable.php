@@ -19,7 +19,7 @@ if (!$db_selected){
 }
 		
 $email = $_SESSION["useremail"];
-$sql = "select workouts.`workout_name`, workouts.`number_of_exercises`
+$sql = "select workouts.id, workouts.`workout_name`, workouts.`number_of_exercises`
 from workouts
 inner join `user-workouts`
 on workouts.id = `user-workouts`.`workout_id`
@@ -27,6 +27,7 @@ inner join users
 on `user-workouts`.`user_id` = users.id
 where users.email = '$email'";
 $wkttable = "";
+$button = "onClick=" . "document.location.href=" . "'details.php'" . ";";
 
 if (!$res = mysql_query($sql)){
 	die('Error:' . mysql_error());
@@ -35,11 +36,11 @@ while($rows = mysql_fetch_assoc($res))
 {
 	$wkttable .= "<tr><td id='workouttd'>".$rows['workout_name']."</td><td id='exercisetd'>".
 	$rows['number_of_exercises']."</td>
-	<td><button id='deletebutton'><img class='icons'src='images/delete_icon.PNG'></button></td> <td><button id='startbutton'><img class='icons'src='images/start_icon.PNG'></button></td>
+	<td><button id='deletebutton'><img class='icons'src='images/delete_icon.PNG'></button></td> <td><button type='submit' name = 'start' id='startbutton' value=" . $rows['id'] . " " . $button . "><img class='icons'src='images/start_icon.PNG'></button></td>
 	</tr>";
 };
 
-$sql = "select id from users where email = '$email'";
+$sql = "select id from users where email = '$email'"; 
 if (!$res = mysql_query($sql)){
 	die('Error:' . mysql_error());
 }
