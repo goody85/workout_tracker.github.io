@@ -18,7 +18,7 @@ if (!$db_selected){
 	die('Can\'t use ' . DB_NAME . ': ' . mysql_error());
 }
 
-$workoutid = $_GET['delete'];
+$workoutid = $_POST['delete'];
 $sql = "delete from workouts where id = '$workoutid'";
 
 if (!$res = mysql_query($sql)){
