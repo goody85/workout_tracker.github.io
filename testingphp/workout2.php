@@ -17,16 +17,15 @@
     <h2 class="topname">New Workout</h2>
     <p></p>
 
-    <form id="workoutform">
+    <form id="workoutform" method="post">
         <h5>Name</h5>
-        <input id="exercisetxt" type="text" required autocomplete="off" name="exercisename" value="" placeholder="Exercise name"> 
+        <input id="exercisetxt" type="text" required autocomplete="off" name="exercisename" value="" placeholder="Exercise Name"> 
 		<br>
 		<br>
 		<br>
-        <h5>Weight</h5> 
-        <input id="exercisetxt" type="number" required autocomplete="off" name="weight" value="" placeholder="Weight">
+        <h5># of Exercises</h5> 
+        <input id="exercisetxt" type="number" required autocomplete="off" name="numofexercise" value="" placeholder="# of Exercises">
 
-        
         <div id = "new-workout">
 
         <a href="homepage.php"><img id = "xbutton" src = "images/cancel_icon.png" 
