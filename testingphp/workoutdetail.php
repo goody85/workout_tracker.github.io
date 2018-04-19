@@ -13,7 +13,7 @@ session_start();
     <h1 class="topname">
 	<?php echo $_SESSION["workoutheader"] ?>
     </h1>
-	<table>
+	<table class="workoutstable">
     <?php echo $_SESSION["details"] ?>
 	</table>
     <div>

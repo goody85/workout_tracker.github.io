@@ -33,7 +33,7 @@ if (!$res = mysql_query($sql)){
 }
 while($rows = mysql_fetch_assoc($res))
 {
-	$details .= "<tr><td colspan='6'>".$rows['exercise_name']."</td></tr>".
+	$details .= "<tr><td colspan='5'>".$rows['exercise_name']."</td><td rowspan='3'><button id='beginbutton'><img class='icons'src='images/gym_icon.PNG'></button></td></tr>".
 	"<tr><td>Weight</td><td>Sets</td><td>Reps</td><td>Time</td><td>Muscle</td></tr>".
 	"<tr><td>" . $rows['weight'] . "</td><td>" . $rows['sets'] . "</td><td>" . $rows['reps'] . "</td><td>" . $rows['time'] . "</td><td>" . $rows['muscle'] . "</td></tr>";
 };
@@ -45,7 +45,7 @@ if (!$res = mysql_query($sql)){
 }
 $rows = mysql_fetch_assoc($res);
 
-$_SESSION["workoutheader"] = $rows['id'];
+$_SESSION["workoutheader"] = $rows['workout_name'];
 $_SESSION["details"] = $details;	
 mysql_close();
 header( 'Location: /webdev/workoutdetail.php' );		
