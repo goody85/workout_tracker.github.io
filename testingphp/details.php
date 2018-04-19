@@ -27,7 +27,6 @@ inner join workouts
 on `workout-exercise`.`workout_id` = workouts.id
 where workouts.id = '$workoutid'
 ORDER BY exercises.`exercise_name`";
-
 $details = "";
 
 if (!$res = mysql_query($sql)){
