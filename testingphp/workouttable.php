@@ -25,7 +25,8 @@ inner join `user-workouts`
 on workouts.id = `user-workouts`.`workout_id`
 inner join users
 on `user-workouts`.`user_id` = users.id
-where users.email = '$email'";
+where users.email = '$email'
+ORDER BY workouts.`workout_name`";
 $wkttable = "";
 $button = "onClick=" . "document.location.href=" . "'details.php'" . ";";
 $button2 = "onClick=" . "document.location.href=" . "'removeworkout.php'" . ";";
