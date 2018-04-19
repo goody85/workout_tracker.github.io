@@ -9,7 +9,7 @@
     <!--title>Sign-Up/Login Form</title-->
     <title>Login Form</title>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylepage.css">
 	
 </head>
 
@@ -29,7 +29,9 @@
 
                     <input type="email" required autocomplete="off" name="email" />
                 </div>
-
+			
+				<br>
+				<br>
                 <div class="field-wrap">
                     <label>
                         Password<span class="req">*</span>
@@ -38,14 +40,19 @@
                     <input type="password" required autocomplete="off" name="password"/>
                 </div>
 
+				<br>
+				<br>
                 <p class="forgot"><a href="signupform.php">Need an Account?</a></p>
 
                 <!--button class="button button-block"/>Log In</button-->
                 <!--button class="button button-block" onClick="document.location.href='homepage.html';">Log In</button-->
                 <!--button class="button button-block" onClick="document.location.href='homepage.html';">Log In</button-->
                 <!--button type="submit" class="button button-block" onClick="document.location.href='homepage.html';">Log In</button-->
+                <!--button type="submit" onClick="document.location.href='homepage.php' class="button button-block">Log In</button-->
 
-                <button type="submit" onClick="document.location.href='homepage.php' class="button button-block">Log In</button>
+				<br>
+				<br>
+                <button type="submit" onClick="document.location.href='homepage.php'" class="button button-block">Log In</button>
 
             </form>
         </div>

@@ -12,17 +12,19 @@
 
 <body>
     <h1 class="topname">The Gym</h1>
+	<form action="details.php" method="post">
     <div id="innertable">
         <table class="workoutstable">
             <tr>
-                <th>Workout</th>
-                <th># Of Excercises</th>
+                <th id="tabletitle">Workout</th>
+                <th id="tabletitle"># Of Excercises</th>
                 <th></th>
                 <th></th>
             </tr>
             <?php echo $_SESSION["workouttable"]; ?>
         </table>
     </div>
+	</form>
     <div>
         <nav class="navbar bottom-nav">
             <table class="bottom-nav">
@@ -33,11 +35,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/profile_icon.PNG"></td>
-                    <td class="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/history_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/profile_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/history_icon.PNG"></td>
                     <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/home_icon.PNG"></td>
-                    <td class="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/data_icon.PNG"></td>
-                    <td class="bottom-menu" onClick="document.location.href='index.php';"><img class="icons" src="images/settings_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/data_icon.PNG"></td>
+                    <td class="bottom-menu" onClick="document.location.href='homemenu.php';"><img class="icons" src="images/settings_icon.PNG"></td>
                 </tr>
             </table>
         </nav>

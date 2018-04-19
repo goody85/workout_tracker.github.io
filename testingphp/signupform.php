@@ -1,7 +1,4 @@
-﻿<?php
-	session_start();
-?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -9,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Sign-Up Form</title>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylepage.css">
 </head>
 
 <body>
@@ -26,7 +23,7 @@
                             </label>
                             <input type="text" required autocomplete="off" name="firstname"/>
                         </div>
-
+						
                         <div class="field-wrap">
                             <label>
                                 Last Name<span class="req">*</span>
@@ -34,14 +31,18 @@
                             <input type="text" required autocomplete="off" name="lastname"/>
                         </div>
                     </div>
-
+					
+					<br>
+					<br>
                     <div class="field-wrap">
                         <label>
                             Email Address<span class="req">*</span>
                         </label>
                         <input type="email" required autocomplete="off" name="emailaddress"/>
                     </div>
-
+					
+					<br>
+					<br>
                     <div class="field-wrap">
                         <label>
                             Set A Password<span class="req">*</span>
@@ -49,6 +50,8 @@
                         <input type="password" required autocomplete="off" name="password1"/>
                     </div>
 
+					<br>
+					<br>
                     <div class="field-wrap">
                         <label>
                             Confirm Password<span class="req">*</span>
@@ -56,6 +59,8 @@
                         <input type="password" required autocomplete="off" name="password2"/>
                     </div>
 
+					<br>
+					<br>
                     <div class="field-wrap">
                         <label>
                             Gender<span class="req">*</span>
@@ -63,6 +68,8 @@
                         <input type="text" required autocomplete="off" name="gender"/>
                     </div>
 
+					<br>
+					<br>
                     <div class="mid-row">
                         <div class="field-wrap">
                             <label>
@@ -95,6 +102,8 @@
             <!--button type="submit" class="button button-block" href="document.location.href='homepage.html';"/>Get Started</button-->
             <!--button type="submit" class="button button-block">Get Started</button-->
 
+					<br>
+					<br>
             <button type="submit" href="document.location.href='loginform.php'" class="button button-block">Get Started</button>
 
             </form>
