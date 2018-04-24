@@ -36,6 +36,13 @@ $message = "Wrong Password! Try Again";
 echo "<script type='text/javascript'>alert('$message');</script>";
 header('Refresh:0; url=loginform.php');
 }
+$sql = "select id from users where email = '$email'"; 
+if (!$res = mysql_query($sql)){
+	die('Error:' . mysql_error());
+}
+$rows = mysql_fetch_assoc($res);
+
+$_SESSION["userid"] = $rows['id'];
 mysql_close();
 		
 ?>
