@@ -17,7 +17,7 @@
 		<td onClick="document.location.href='workouttable.php';"><img id="mainicons" src="images/home_menu_gym.png"></td>
 		</tr>
 		<tr>
-		<td onClick="document.location.href='index.php';"><img id="mainicons" src="images/home_menu_settings.png"></td>
+		<td onClick="document.location.href='settingform.php';"><img id="mainicons" src="images/home_menu_settings.png"></td>
 		<td onClick="document.location.href='index.php';"><img id="mainicons" src="images/home_menu_signout.png"></td>
 		</tr>
 		</table>
